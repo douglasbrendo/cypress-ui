@@ -6,6 +6,7 @@ before(() => {
 })
 
 describe('Should test the home menu', () => {
+
     it('Should get account with positive balance', () => {
         cy.accessHomeMenu()
         cy.getBalance('Conta para saldo')
@@ -20,6 +21,7 @@ describe('Should test the home menu', () => {
 })
 
 describe('Should test the accounts menu', () => {
+
     it('Should create an account', () => {
         cy.accessAccountsMenu()
         cy.createAcount('Account test')
@@ -35,6 +37,7 @@ describe('Should test the accounts menu', () => {
     })
 
     it('Should not create an account with same name', () => {
+
         cy.accessAccountsMenu()
         cy.createAcount('Conta mesmo nome')
         cy.getMessage()
@@ -50,6 +53,7 @@ describe('Should test the accounts menu', () => {
 })
 
     describe('Should test the movement menu', () => {
+
     it('Should create a movement', () => {
         cy.accessMovementMenu()
         cy.createMovement('Description test', '300', 'Levi', 'Conta para movimentacoes')
@@ -59,6 +63,7 @@ describe('Should test the accounts menu', () => {
 })
 
     describe('Should test the extract menu', () => {
+
     it('Should update a movement', () => {
         cy.accessExtractMenu()
         cy.updateMovement('Movimentacao de conta', 'Desc update', '400', 'Eren')

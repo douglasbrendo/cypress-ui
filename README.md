@@ -4,11 +4,10 @@
 install node.js in the version recommended for most users
 
 ## Initialize the project
-`npm init -y`  
-`npm instal cypress`
+`npm install`  
 
-## Add script to package json
-`"cypress:open": "cypress open"`
-
-## Run cypress
+## Run cypress (IDE)
 `npm run cypress:open`
+
+## Run cypress (headless)
+`npm run cypress:run`

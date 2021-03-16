@@ -1,16 +1,21 @@
 {
-  "name": "curso-cypress",
+  "name": "cypress-ui",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:run": "cypress run --headless",
     "cypress:open": "cypress open"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/douglasbrendo/cypress-ui.git"
+
+  },
   "keywords": [],
-  "author": "",
+  "author": "Douglas Brendo",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "cypress": "^5.5.0",
     "cypress-xpath": "^1.6.2"
   }
